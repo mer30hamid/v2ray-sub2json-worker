@@ -218,10 +218,13 @@ async function handleRequest(request) {
             cursor: pointer;
             transition: background-color 0.3s;
             margin-bottom: 1rem;
-            margin-left: auto; /* Changed from margin-right: 0 to ensure right-alignment */
+            margin-left: auto;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            height:2.5rem;
+            width:8rem;
+            direction: rtl;
           }          
           .lang-toggle:hover {
             background: #5a6268;
@@ -290,10 +293,10 @@ async function handleRequest(request) {
             <h1 id="title">V2Ray Sub2JSON Worker</h1>
             <h2 id="subTitle">(تولید ساب جیسون برای <a href="https://github.com/XTLS/Xray-core" target="_blank">هسته XRAY</a>)</h2>
           </header>
-          <p class="instructions" id="instruction">لینک(های) اشتراک و یا کانفیگ(های) V2Ray خود را وارد کنید:</p>
+              <p class="instructions" id="instruction">لینک(های) اشتراک و یا کانفیگ(های) V2Ray خود را وارد کنید:</p>
           <form class="form-group" action="${basePath}" method="GET">
-            <textarea name="sub" id="sub" placeholder="مثال: https://your-sub-url.com/v2ray.txt" required aria-label="Subscription Links"></textarea>
-            <p class="footnote" id="footnote">(هر کدام در یک خط جداگانه)</p>
+              <textarea name="sub" id="sub" placeholder="مثال: https://your-sub-url.com/v2ray.txt" required aria-label="Subscription Links"></textarea>
+              <p class="footnote" id="footnote">(هر کدام در یک خط جداگانه)</p>
 
             <details class="settings-limit">
               <summary id="settingsLimitTitle">محدود کردن خروجی</summary>
