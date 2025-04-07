@@ -1,5 +1,9 @@
 name: Build and Release ZIP
 
+# Explicitly grant permissions
+permissions:
+  contents: write  # Required for creating releases and uploading assets
+
 on:
   push:
     branches:
@@ -24,6 +28,12 @@ jobs:
         with:
           node-version: '22.4.0'  # Explicitly use a compatible version
           cache: 'npm'
+
+      # Verify Node version
+      - name: Verify Node version
+        run: |
+          node -v  # Should be v18.20.7
+          npm -v
 
       # Clean and install dependencies
       - name: Clean and Install dependencies
@@ -51,7 +61,7 @@ jobs:
       # Create GitHub Release
       - name: Create Release
         if: steps.version-check.outputs.version_changed == 'true'
-        id: create-release  # ID to reference in next step
+        id: create-release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -72,7 +82,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create-release.outputs.upload_url }}  # From create-release step
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
           asset_path: v2ray-sub2json-worker-v${{ steps.version-check.outputs.current_version }}.zip
           asset_name: v2ray-sub2json-worker-v${{ steps.version-check.outputs.current_version }}.zip
           asset_content_type: application/zip
