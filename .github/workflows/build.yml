@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'  # Matches your runner’s Node version
+          node-version: '18.20.7'  # Explicitly use a compatible version
           cache: 'npm'
 
       # Clean and install dependencies
