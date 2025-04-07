@@ -1,13 +1,13 @@
 {
 	"name": "sub-to-load-balancer",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-        "zip": "npm run build && node zip.cjs",       
-        "tree": "node tree.cjs",
+		"zip": "npm run build && node zip.cjs",
+		"tree": "node tree.cjs",
 		"preview": "npm run build && wrangler dev",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
