@@ -1,0 +1,23 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"title": "V2Ray Sub2JSON Worker",
+	"subTitle": "(تولید ساب جیسون برای <a href='https://github.com/XTLS/Xray-core' target='_blank'>هسته XRAY</a>)",
+	"instruction": "لینک(های) اشتراک و یا کانفیگ(های) V2Ray خود را وارد کنید:",
+	"footnote": "(هر کدام در یک خط جداگانه)",
+	"clearButton": "پاک کردن",
+	"copyButton": "تبدیل و کپی",
+	"submitButton": "باز کردن",
+	"langButton": "English",
+	"placeholder": "مثال: https://your-sub-url.com/v2ray.txt",
+	"error": "خطا! لطفا یک چیزی وارد کنید!",
+	"copied": "لینک تبدیل شده در کلیپ‌بورد کپی شد ✔",
+	"cleared": "متن پاک شد",
+	"copyFailed": "کپی ناموفق: ",
+	"settingsLimitTitle": "محدود کردن خروجی",
+	"settingsLimitVlessLabel": "پروتکل Vless",
+	"settingsLimitVmessLabel": "پروتکل Vmess",
+	"settingsLimitShadowsocksLabel": "پروتکل Shadowsocks",
+	"settingsLimitTrojanLabel": "پروتکل Trojan",
+	"settingsLimitWireguardLabel": "پروتکل Wireguard",
+	"settingsLimitRealityLabel": "دارای تنظیم TLS از نوع Reality"
+}

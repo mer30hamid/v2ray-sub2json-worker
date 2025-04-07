@@ -1,0 +1,23 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"title": "V2Ray Sub2JSON Worker",
+	"subTitle": "(Generate JSON sub for <a href='https://github.com/XTLS/Xray-core' target='_blank'>XRAY core</a>)",
+	"instruction": "Enter your V2Ray subscription link(s) or config(s) below:",
+	"footnote": "(each on a separate line)",
+	"clearButton": "Clear",
+	"copyButton": "Convert & Copy",
+	"submitButton": "Open",
+	"langButton": "فارسی",
+	"placeholder": "e.g., https://your-sub-url.com/v2ray.txt",
+	"error": "Error! Please enter something!",
+	"copied": "Converted URL copied to clipboard ✔",
+	"cleared": "Text cleared",
+	"copyFailed": "Failed to copy: ",
+	"settingsLimitTitle": "Limiting output",
+	"settingsLimitVlessLabel": "Vless protocol",
+	"settingsLimitVmessLabel": "Vmess protocol",
+	"settingsLimitShadowsocksLabel": "Shadowsocks protocol",
+	"settingsLimitTrojanLabel": "Trojan protocol",
+	"settingsLimitWireguardLabel": "Wireguard protocol",
+	"settingsLimitRealityLabel": "Has Reality TLS setting"
+}
