@@ -12,8 +12,8 @@
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/mer30hamid/v2ray-sub2json-worker)
 ## نصب بصورت دستی
 
-1. ابتدا فایل `_worker.js` را از پوشه src دانلود کنید
-2. وارد حساب کاربری کلادفر شده و یک ورکر بسازید و از فایل دانلود شده استفاده کنید
+1. ابتدا آخرین فایل زیپ آماده شده را از قسمت [Releases](https://github.com/mer30hamid/v2ray-sub2json-worker/releases) دانلود کنید (نام آن با فرمت v2ray-sub2json-worker-vx.x.x.zip در قسمت Assets است)
+2. وارد حساب کاربری کلادفر شده و یک ورکر یا پیجز بسازید و از فایل دانلود شده استفاده کنید
 
 ## پیش‌نمایش
 
