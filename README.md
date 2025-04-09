@@ -19,7 +19,7 @@
 
 آدرس زیر را باز کنید، نتیجه را ببینید و امتحان کنید:
 
-https://v2ray-sub2json.mer30repl.workers.dev/convert
+[https://v2ray-sub2json.mer30repl.workers.dev/convert](https://v2ray-sub2json-worker.mer30repl.workers.dev/convert)
 
 
 ## نحوه استفاده
